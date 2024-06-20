@@ -1,6 +1,70 @@
 <!DOCTYPE html>
 
 <head>
+  <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.2s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .6} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
   
   <!--TITLE-->
   <title>HOME</title>
@@ -16,6 +80,7 @@
   <!--EXTERNAL CSS-->
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="index.scss"> -->
 
 
   <!-- Bootstrap 3.4.1 -->
@@ -37,8 +102,8 @@
 </head>
 
 <body>
-  
-    <nav class="navbar navbar-default navbar-fixed" style=" margin-top: 0%; width: 100%; z-index: 2; position: fixed;border-radius: 74px; background-color: #E77B46; padding-bottom:15px;">
+
+    <nav class="navbar navbar-default navbar-fixed" style=" margin-top: 0%; width: 100%; z-index: 2; position: fixed; background-color: #E77B46; padding-bottom:15px;">
       <div class="container-fluid" style="display: flex; justify-content: space-evenly;">
         <div class="navbar-header" style="height:50px; width:auto;">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -59,9 +124,9 @@
           </ul>
         </li>
         <!-- <li><a href="aboutus.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li> -->
-        <li><a href="volunteers.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ACTIVITIES</b></a></li>
-        <li><a href="courses.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>COURSES</b></a></li>
-        <li><a href="revievews.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>REVIEWS</b></a></li>
+        <li><a href="activities.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ACTIVITIES</b></a></li>
+        <li><a href="https://demo.puresaganaturals.com/" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>COURSES</b></a></li>
+        <li><a href="reviews.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>REVIEWS</b></a></li>
 
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white;  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>GALLERY</b><span class="caret"></span></a>
           <ul class="dropdown-menu" style="background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); ">
@@ -91,8 +156,8 @@
     <div class="" style="height:70px; width:auto;">
       <div class="" style="display: flex; justify-content: center;  align-items: center;">
       <img src="deshyogaLogo.webp" height=100px width=auto style="border-radius: 50%; float: left">
-      <div class="trust-name" width=auto style="padding: 30px">DESHYOGA CHARITABLE TRUST</div>
-      <img src="./images/logo.png" height=100px width=auto style="border-radius: 50%; float: right">
+      <div class="trust-name" width=auto style="font-size: 35px; padding: 30px">DESHYOGA CHARITABLE TRUST</div>
+      <img src="./images/logo.png" height=100px width=auto style="border-radius: 50%; float: right; ">
     </div>
   </div>
   </header>
@@ -108,7 +173,7 @@
           </section>
         </td>
         <td>
-          <img src="images/ngo.jpg" class="inline-photo show-on-scroll" alt="INFERNO">
+          <img src="images/inaguralDeshyogaPic.png" class="inline-photo show-on-scroll" alt="INFERNO">
         </td>
       </tr>
     </table>
@@ -121,6 +186,10 @@
   </div> -->
 
   <!--CARDS-->
+
+
+           
+  
   <h1 class="title">Our Featured Services</h1>
   <section class="section0" id="sections">
     
@@ -131,7 +200,7 @@
     </div> -->
     <div class="card inline-photo show-on-scroll">
       <i class="fas fa-child"></i>
-      <h3>Child Welfare</h3>
+      <h3>Social Welfare</h3>
     </div>
     <div class="card inline-photo show-on-scroll">
       <i class="fas fa-child"></i>
@@ -160,42 +229,44 @@
   </section>
 
   <marquee class = "marquee" behavior="scroll" direction="left">
-    SATWIK AHAAR ~Coming Soon~ SATWIK VICHAAR ~Coming Soon~ WHAT'S NEXT? ~Coming Soon~ STAY TUNED ~Coming Soon~ </marquee>
+    Satvik Kriya ~ Vivek Kriya ~ Satvik Vichar ~ Satvik Sanskar ~ Shatkarma ~ </marquee>
 
   <!--CONTAINER-->
-  <div class="container">
-    <table>
-      <tr>
-        <td>
-          <img src="images/ngo2.jpg" class="inline-photo show-on-scroll" alt="About Us">
-        </td>
-        <td>
-          <h5 class="sub-title">Discover Our Organisation</h5>
-          <h1 class="title">We Serve Humanity</h1>
-          <p>The main aim of this trust is little and submitted gathering,DESHYOGA CHARITABLE TRUST have made
-            a begin by concentrating on the lives of the innate kids.
+  <!-- <iframe src="https://www.youtube.com/embed/?listType=user_uploads&channel_ID=UCWxeAkbI_C6NOUTJSwu4FaQ" width="480" height="400"></iframe> -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=PA0AAlSyV0p0o9lH&amp;list=PL8QPoD95iJWMtPfM8Y2uLxec7gCuvVjpx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <!-- <div class="slideshow-container">
 
-            Some of the programs experienced by the DESHYOGA CHARITABLE TRUST welfare society.
-            <li>
-              <ul>• Agriculture</ul>
-              <ul>• Child welfare</ul>
-              <ul>• Education</ul>
-              <ul>• Environment</ul>
-              <ul>• Health</ul>
-              <ul>• Women Empowerment</ul>
-              <ul>• Old Age Welfare</ul>
-              <ul>• Skills Development</ul>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="#" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="#" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="#" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div> -->
+      
 
-            </li>
-          </p>
-          <a href="#moreaboutus" class="btn2">Discover More</a>
-        </td>
-      </tr>
-    </table>
-  </div>
 
-
-
+   
   <section class="slick" id="moreaboutus">
     <div class="banner">
       <h1 class="title">Our Activities</h1>
@@ -206,19 +277,29 @@
         <td>
           <ul style="padding-left: 5%;">
             <li>
-              <h3>Women Empowerment</h3>
-              <p>In agrarian society male-female are like Beljodi of Hal (Bullock pair of a plough). In such situation
-                both ...<a href="projects.html" style="color: blue;">Read More  </a>
+              <h3>Sugar Bharat Chhodo</h3>
+              <p>Reverse diabetes naturally with Deshyoga's proven yogic approach . . .
               </p>
             </li>
             <li>
-              <h3>Education</h3>
-              <p>We believe that the purpose of education is to make the child a self-motivated and independent learner . . . <a href="projects.html" style="color: blue;">Read More</a></p>
+              <h3>Motapa Bharat Chhodo</h3>
+              <p>Shed obesity, reclaim your health (or) Defeat weight gain, empower a healthier India . . .</p>
             </li>
             <li>
-              <h3>Free Health Checkups, RCH Camps & Vaccination</h3>
-              <p>Due to lack of hygienic awareness, poor sanitation, bad drinking water quality, gender issues,
-                superstitions . . .<a href="projects.html" style="color: blue;">Read More</a></p>
+              <h3>BP Bharat Chhodo</h3>
+              <p>Manage blood pressure naturally with Deshyoga, cuz' Yoga se Hoga . . . </p>
+            </li>
+            <li>
+              <h3>Arthritis Bharat Chhodo</h3>
+              <p>End arthritis in India with Deshyoga's proven program . . . </p>
+            </li>
+            <li>
+              <h3>Cold Yoga</h3>
+              <p>Warm your body, soothe your soul with Deshyoga's Cold Yoga for winter wellness. . . .</p>
+            </li>
+            <li>
+              <h3>Eye Yoga</h3>
+              <p>See the World Clearly with Natural Eye Care Techniques . . .</p>
             </li>
           </ul>
         </td>
@@ -243,44 +324,54 @@
         <td>
           <ul style="padding-left: 5%;">
             <li>
-              <h3>Child Welfare </h3>
-              <p>SGJSS aims towards lasting improvements in the quality of life of disadvantage and marginalised
-                children . . .<a href="projects.html" style="color: blue;">Read More</a></p>
+              <h3>Liver Yoga</h3>
+              <p>A practice to support your body's natural detoxification process . . . .</p>
             </li>
             <li>
-              <h3>Environment</h3>
-              <p>The forests of India are ancient in nature and composition. SGJSS is providing wildlife education . . .<a href="projects.html" style="color: blue;">Read More</a></p>
+              <h3>Kidney Yoga</h3>
+              <p>Nourish your body and support vital health . . .</p>
             </li>
             <li>
-              <h3>Agricultural Program</h3>
-              <p>Farming has always been one of the most important economic activities in India. With about two-thirds . . .<a href="projects.html" style="color: blue;">Read More</a></p>
+              <h3>Lung Yoga</h3>
+              <p>Breathe Deep, Live Strong . . .</p>
+            </li>
+            <li>
+              <h3>Skin Yoga</h3>
+              <p>Deshyoga unveils the secrets of radiant skin through the power of Yoga . . .</p>
+            </li>
+            <li>
+              <h3>Ear Yoga</h3>
+              <p>Promote balance and well-being through gentle ear exercises . . .</p>
+            </li>
+            <li>
+              <h3>Mouth Yoga</h3>
+              <p>Smile your way to a younger you with Deshyoga's Mouth Yoga! . . .</p>
             </li>
           </ul>
         </td>
       </tr>
     </table>
   </section>
-
-
+  
   <!-- Cards -->
   <div class="container" style="margin-top: 40px;">
   <div class="row">
     <div class="col-md-4 col-sm-12 col-xs-12 bg-info img-thumbnail">
-      <h5>Our Program</h5>
-            <p>Our Main Program is to provide Agriculture Support, Child welfare, Rural Education,
-              Women Empowerment, Skill Devlopment </p>
+      <h5>Our Vision</h5>
+            <p>Assist people across the world in
+              leading a happy, healthy and
+              disease-free life </p>
     </div>
     <div class="col-md-4 col-sm-12 col-xs-12 bg-info img-thumbnail">
       <h5>Our Mission</h5>
-            <p class="card-text">Our Mission is to serve the people who are needy and had impeccable progress on
-              activities and successfully obtaining a better life.</p>
+            <p class="card-text">To reach out to individuals as well as organizations to educate and help people using satvik lifestyle practices.</p>
     </div>
     <div class="col-md-4 col-sm-12 col-xs-12 bg-info img-thumbnail">
       <h5>Contact Us</h5>
-            <p>2/69 Apple residency, Chitrakoot, Vaishali Nagar, jaipur Raj. 302021 <br>
-              Ph no - 9414334192 </p>
+            <p>D-87, Block D, Swaran Jayanti Puram, Govindpuram, Ghaziabad, Uttar Pradesh 201013 </p>
     </div>
   </div>
+ 
 </div>
 
 
@@ -294,6 +385,7 @@
                   <img src="images/logo.png" class="logo-img" style="border-radius: 50%;">
 
               </div>
+             
 
               <div class="grid-item inner-grid-container">
 
@@ -322,7 +414,8 @@
       </div>
   </footer>
 
-
+  
+  
 
 
   <!--JAVASCRIPT-->
@@ -330,7 +423,36 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
   integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 
+    }
+    </script>
 </body>
 
 </html>

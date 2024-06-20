@@ -170,7 +170,7 @@
       -webkit-animation-name: animatebottom;
       -webkit-animation-duration: 1s;
       animation-name: animatebottom;
-      animation-duration: 1s
+      animation-duration: 0.6s
     }
     
     @-webkit-keyframes animatebottom {
@@ -185,14 +185,7 @@
     
     #myDiv {
       display: none;
-    }
-    
-    
-    .navbar{
-      box-shadow: 0px 4px rgb(93, 93, 93, 0.45);
-    }
-    
-    
+    }  
     
       
     
@@ -462,7 +455,7 @@
            height: 100%;
            background-size:cover;
            transform: translateX( 700px );
-           background-image: url("images/31.jpg");
+           background-image: url("https://cloud.tagbox.com/media/108883/103193/183724/161938606486646/image_626081596-1667195649.jpg");
            background-repeat:no-repeat;
            background-position: center;
            animation: opaqTransition 26s cubic-bezier(0, 0, 0, 0.97) infinite;
@@ -471,21 +464,21 @@
     
           .slick .card_part.card_part-two {
            z-index: 6;
-           background-image: url("images/32.jpg");
+           background-image: url("https://cloud.tagbox.com/media/108883/103193/183724/142666345080539/image_149489289-1674664449.jpg");
            animation-delay: 7s;
            background-repeat:no-repeat;
           }
     
           .slick .card_part.card_part-three {
            z-index: 5;
-           background-image: url("images/33.jpg");
+           background-image: url("https://cloud.tagbox.com/media/108883/103193/183724/142673885079785/image_632290849-1667195847.jpg");
            animation-delay: 14s;
            background-repeat:no-repeat;
            }
     
           .slick .card_part.card_part-four {
            z-index: 4;
-           background-image: url("images/35.jpeg");
+           background-image: url("https://cloud.tagbox.com/media/108883/103193/183724/160496096630897/image_730282091-1667195716.png");
            animation-delay: 21s;
            background-repeat:no-repeat;
            }
@@ -551,7 +544,7 @@
     margin:auto;
     }
     .section1 .accordion {
-      background-color: #eee;
+      /* background-color: #eee; */
       color: #444;
       cursor: pointer;
       padding: 18px;
@@ -585,7 +578,7 @@
     
     .section1 .panel {
       padding: 0 18px;
-      background-color: white;
+      /* background-color: white; */
       max-height: 0;
       overflow: hidden;
       margin:auto;
