@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<head>
+  <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.2s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .6} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+  
+  <!--TITLE-->
+  <title>BLOGS</title>
+
+  <!--ICON-->
+  <link rel="shortcut icon" href="images/logo.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+  <!--EXTERNAL CSS-->
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="blogs.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="index.scss"> -->
+
+
+  <!-- Bootstrap 3.4.1 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!--PLUGIN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <!--FONT AWESOME-->
+  <script src="https://kit.fontawesome.com/49bbc89520.js" crossorigin="anonymous"></script>
+
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed" style=" margin-top: 0%; width: 100%; z-index: 2; position: fixed; background-color: #E77B46; padding-bottom:15px;">
+      <div class="container-fluid" style="display: flex; justify-content: space-evenly;">
+        <div class="navbar-header" style="height:50px; width:auto;">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>     
+          </button>
+        <a class="navbar-brand" href="#"></a>
+      
+      
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar" >
+      <ul class="nav navbar-nav navbar-right ">
+        <li><a href="index.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>HOME</b></a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:rgb(255, 255, 255);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b><span class="caret" ></span></a>
+          <ul class="dropdown-menu" style="background-color: black; background-image: linear-gradient(315deg, #f0811f 0%, #ff8838 74%); ">
+            <li><a href="aboutus.html" style="color:white;background-color: black; background-image: linear-gradient(315deg, #f0811f 0%, #ff8838 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>About Deshyoga</b></a></li>
+            <li><a href="founder.html" style="color:white; background-color: black; background-image: linear-gradient(315deg, #f0811f 0%, #ff8838 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>About Our Founder</b></a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="aboutus.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li> -->
+        <li><a href="activities.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ACTIVITIES</b></a></li>
+        <li><a href="https://demo.puresaganaturals.com/" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>COURSES</b></a></li>
+        <li><a href="reviews.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>REVIEWS</b></a></li>
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white;  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>GALLERY</b><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); ">
+            <li><a href="photos.html" style="color:white; background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>Images</b></a></li>
+            <li><a href="videos.html" style="color:white; background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>ARchives & Recordings</b></a></li>
+          </ul>
+        </li>
+        <li><a href="blogs.html" style="color:white;  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>BLOGS</b></a>
+            <!-- <span class="caret"></span> FOR FUTURE USE -->
+            <ul class="dropdown-menu" style="background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); ">
+              <!-- <li><a href="events.html" style="color:white; background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>EVENTS</b></a></li>
+              <li><a href="projects.html" style="color:white; background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>PROJECTS</b></a></li>
+              <li><a href="corona.html" style="color:white; background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b> COVID 19</b></a></li> -->
+            </ul>
+          </li>
+        <li><a href="donation.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 35px 15px 15px;"><b>DONATE</b></a></li>
+        <li><a href="membership.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>MEMBERSHIP</b></a></li>
+        <li><a href="contactus.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>CONTACT US</b></a></li>
+      </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <header style="padding-top: 100px; padding-bottom: 10px;">
+    <div class="" style="height:70px; width:auto;">
+      <div class="" style="display: flex; justify-content: center;  align-items: center;">
+      <img src="deshyogaLogo.webp" height=100px width=auto style="border-radius: 50%; float: left">
+      <div class="trust-name" width=auto style="font-size: 35px; padding: 30px">DESHYOGA CHARITABLE TRUST</div>
+      <img src="./images/logo.png" height=100px width=auto style="border-radius: 50%; float: right; ">
+    </div>
+  </div>
+  </header>
+<!-- main -->
+<div class="container">
+    <div class="card">
+      <div class="card__header">
+        <img src="images/16.jpg" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-blue">Technology</span>
+        <h4>What's new in 2022 Tech</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+      </div>
+      <div class="card__footer">
+        <div class="user">
+          <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
+          <div class="user__info">
+            <h5>Jane Doe</h5>
+            <small>2h ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__header">
+        <img src="images/11.jpg" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-brown">Food</span>
+        <h4>Delicious Food</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+      </div>
+      <div class="card__footer">
+        <div class="user">
+          <img src="https://i.pravatar.cc/40?img=4" alt="user__image" class="user__image">
+          <div class="user__info">
+            <h5>Jony Doe</h5>
+            <small>Yesterday</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__header">
+        <img src="images/14.jpg" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-red">Automobile</span>
+        <h4>Race to your heart content</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+      </div>
+      <div class="card__footer">
+        <div class="user">
+          <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+          <div class="user__info">
+            <h5>John Doe</h5>
+            <small>2d ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card__header">
+          <img src="images/16.jpg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-blue">Technology</span>
+          <h4>What's new in 2022 Tech</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>Jane Doe</h5>
+              <small>2h ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="images/11.jpg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-brown">Food</span>
+          <h4>Delicious Food</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=4" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>Jony Doe</h5>
+              <small>Yesterday</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="images/14.jpg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-red">Automobile</span>
+          <h4>Race to your heart content</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>John Doe</h5>
+              <small>2d ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="images/16.jpg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-blue">Technology</span>
+          <h4>What's new in 2022 Tech</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>Jane Doe</h5>
+              <small>2h ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="images/11.jpg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-brown">Food</span>
+          <h4>Delicious Food</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=4" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>Jony Doe</h5>
+              <small>Yesterday</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="images/14.jpg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-red">Automobile</span>
+          <h4>Race to your heart content</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>John Doe</h5>
+              <small>2d ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="images/16.jpg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-blue">Technology</span>
+          <h4>What's new in 2022 Tech</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>Jane Doe</h5>
+              <small>2h ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="images/11.jpg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-brown">Food</span>
+          <h4>Delicious Food</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=4" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>Jony Doe</h5>
+              <small>Yesterday</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="images/14.jpg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-red">Automobile</span>
+          <h4>Race to your heart content</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>John Doe</h5>
+              <small>2d ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+
+
+<script 
+type="text/javascript"
+src="https://d2jyl60qlhb39o.cloudfront.net/integration-plugin.js"
+id="wa-widget"
+widget-id="x8WqWF"
+>
+</script>
+
+
+</html>
